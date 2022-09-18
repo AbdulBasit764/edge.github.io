@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f13a9149e6.js" crossorigin="anonymous"></script>
+    <title>WelCome.. Metavid</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="css/Journal.css"> -->
+</head>
+
+<body>
+
+
+
+
+
+
+     <!-- navbar -->
+     <div class="w-100 bg-white  fixed-top ">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-4 d-flex align-items-center searching py-2">
+                    <div class="profile_img">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="35" height="35"
+                            class="border-radius">
+                    </div>
+                    <div id="search_input" class="d-flex mx-2 input-group mt-1 ">
+                        <input type="text" class="border-radius d-inline form-control p-2" placeholder="Enter here"
+                            aria-label="Search">
+                        <span class="input-group-text bg-white border-radius-left">
+                            <i class="fa-solid fa-magnifying-glass fs-5"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Icon-list -->
+                <div class="icon-list col-sm-5 align-items-center justify-content-end">
+                    <div style="height: 50px;" class="d-flex align-items-center">
+
+                        <div class="w-100 d-flex align-items-center" style="height: 50px;">
+                            <div class="navbar-icon d-flex align-items-center justify-content-center">
+                                <a href="feed.html"><i class="material-icons">home</i></a>
+                            </div>
+                            <div class="navbar-icon icon-active d-flex align-items-center justify-content-center">
+                                <a href="creator.html"><i class="material-icons">groups</i></a>
+                            </div>
+                            <div class="navbar-icon d-flex align-items-center justify-content-center">
+                                <a href="subscribed.html"><i class="material-icons">list_alt</i></a>
+                            </div>
+                            <div class="navbar-icon d-flex align-items-center justify-content-center">
+                                <a href="coin_history.html"><i class="material-icons">payments</i></a>
+                            </div>
+                            <div class="navbar-icon d-flex align-items-center justify-content-center">
+                                <a href="messenger.html"><i class="material-icons">chat</i></a>
+                            </div>
+                            <div class="navbar-icon d-flex align-items-center justify-content-center">
+                                <a onclick="openNav()"><i class="material-icons">notifications</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 menu d-flex align-items-center justify-content-end ">
+                    <div class="dropdown drop1 mx-2">
+                        <a href="#"
+                            class="d-flex  align-items-center link-dark text-decoration-none dropdown-toggle"
+                            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="" width="30" height="30"
+                                class="rounded-circle ">
+                        </a>
+                        <ul class="dropdown-menu mt-2 text-small shadow" aria-labelledby="dropdownUser2">
+
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="dropdown">
+
+                        <button class="btn btn-primary btn-font-size rounded-3 px-2 dropdown-btn" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="mx-1 fa-solid fa-add "></i>Create
+                        </button>
+
+                        <ul class="dropdown-menu mt-2 text-small shadow" aria-labelledby="dropdownUser2">
+
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    href="#">Create post</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Go live</a></li>
+                        </ul>
+                    </div>
+
+                    <i class="fa-solid fa-bars fs-2" id="bars" style="display: none;" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="chat-link spinner-grow d-flex align-items-center justify-content-center text-primary p-4"
+        role="status">
+        <i class="fa-solid fa-message fs-4 text-white"></i>
+        <span class=""></span>
+    </div> -->
+    </div>
+
+    <!-- navbar end -->
+
+    <div class="container">
+
+        <!-- Homer banner -->
+        <div id="home-banner">
+            <div class="row  d-flex">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h1 class="fw-bold homeText">Make Your Business More Profitable</h1>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea
+                            quo cupiditate facere deleniti fuga officia.</p>
+                        <div>
+                            <a href="#" class="btn btn-primary px-4 getStart mr-2 mb-2">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <img src="home_banner.svg" class="homeBanner" width="140%" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Banner 2 -->
+        <div class="row ">
+            <div class="col-md-7 my-3">
+                <img src="image_1.svg" class="w-100 mt-5" alt="">
+            </div>
+            <div class="col-md-5 px-4 my-3 Communicate">
+                <div class="">
+                    <h1 class="fw-bold">Communicat With Friend's</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat iusto officia nulla,
+                        commodi corrupti?</p>
+                    <div class="card p-3  text-start user-card">
+                        <div class="d-flex align-items-center">
+                            <img src="https://github.com/mdo.png" alt="profile" width="45" height="45"
+                                class="rounded-circle  ">
+                            <div class="mx-2">
+                                <h6 class="p-0 m-0 ">Syed Maaz Hassan</h6>
+                                <p class="p-0 m-0 text-secondary">24k Subscribers</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 mx-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Laudantium a tempora deleniti maiores distinctio facilis consequatur </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Banner 3 -->
+        <div class="row banner-3 ">
+
+            <div class="col-md-5 px-4 Communicate my-5">
+                <div class="">
+                    <h1 class="fw-bold">Communicat With Group's</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat iusto officia nulla,
+                        commodi corrupti?</p>
+                    <div class="card p-3 text-start user-card">
+                        <div class="d-flex align-items-center">
+                            <img src="https://github.com/mdo.png" alt="profile" width="45" height="45"
+                                class="rounded-circle  ">
+                            <div class="mx-2">
+                                <h6 class="p-0 m-0 ">Syed Maaz Hassan</h6>
+                                <p class="p-0 m-0 text-secondary">24k Subscribers</p>
+                            </div>
+                        </div>
+                        <p class="mt-3 mx-2 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Laudantium a tempora deleniti maiores distinctio facilis consequatur </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7 my-3">
+                <img src="image_2.svg" class="w-100" alt="">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row banner-3 live_broadcast">
+            <h1 class="text-center  fw-bold">BroadCasting</h1>
+
+            <div class="col-md-5 d-flex align-items-center px-4 Communicate my-5">
+                <div class="">
+                    <h1 class="fw-bold">Live BroadCasting</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat iusto officia nulla,
+                        commodi corrupti? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem voluptatibus
+                        aliquid quod voluptas, dolore nostrum dolor amet! Ullam, deserunt. Autem, eveniet laboriosam?
+                        Dolore, voluptates et?</p>
+                </div>
+            </div>
+
+            <div class="col-md-7 ">
+                <img src="image_3.png" class="w-100" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Users Card -->
+        <div class="row users_cards">
+            <h1 class="text-center">More User's</h1>
+            <div class="col-md-4 my-3">
+                <div class="card register-users text-start">
+                    <div class="img d-block justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook-f text-white w-100 text-center mt-2 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin-in text-white w-100  text-center my-3 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram text-white w-100 text-center   fs-4"></i>
+                        </a>
+                    </div>
+                    <img class="card-img-top" src="user_1.webp" alt="Title">
+                    <div class="card-body">
+                        <h4 class="card-title">Syed Maaz Hassan</h4>
+                        <h6 class="text-secondary">24k Subscribers</h6>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            distinctio non a labore quibusdam minus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="card register-users text-start">
+                    <img class="card-img-top" src="user_2.webp" alt="Title">
+                    <div class="img d-block justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook-f text-white w-100 text-center mt-2 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin-in text-white w-100  text-center my-3 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram text-white w-100 text-center   fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syed Maaz Hassan</h4>
+                        <h6 class="text-secondary">24k Subscribers</h6>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            distinctio non a labore quibusdam minus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="card register-users text-start">
+                    <img class="card-img-top" src="user_3.webp" alt="Title">
+                    <div class="img d-block justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook-f text-white w-100 text-center mt-2 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin-in text-white w-100  text-center my-3 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram text-white w-100 text-center   fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syed Maaz Hassan</h4>
+                        <h6 class="text-secondary">24k Subscribers</h6>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            distinctio non a labore quibusdam minus.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 my-3">
+                <div class="card register-users text-start">
+                    <img class="card-img-top" src="user_1.webp" alt="Title">
+                    <div class="img d-block justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook-f text-white w-100 text-center mt-2 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin-in text-white w-100  text-center my-3 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram text-white w-100 text-center   fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syed Maaz Hassan</h4>
+                        <h6 class="text-secondary">24k Subscribers</h6>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            distinctio non a labore quibusdam minus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="card register-users text-start">
+                    <img class="card-img-top" src="user_2.webp" alt="Title">
+                    <div class="img d-block justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook-f text-white w-100 text-center mt-2 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin-in text-white w-100  text-center my-3 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram text-white w-100 text-center   fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syed Maaz Hassan</h4>
+                        <h6 class="text-secondary">24k Subscribers</h6>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            distinctio non a labore quibusdam minus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 my-3">
+                <div class="card register-users text-start">
+                    <img class="card-img-top" src="user_3.webp" alt="Title">
+                    <div class="img d-block justify-content-center align-items-center">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-facebook-f text-white w-100 text-center mt-2 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-linkedin-in text-white w-100  text-center my-3 fs-4"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-instagram text-white w-100 text-center   fs-4"></i>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Syed Maaz Hassan</h4>
+                        <h6 class="text-secondary">24k Subscribers</h6>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                            distinctio non a labore quibusdam minus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="my-4 multi-users d-flex justify-content-center align-items-center">
+            <div>
+                <img src="user_1.webp" alt="profile" width="65" height="65" class="rounded-circle ">
+                <img src="user_2.webp" alt="profile" width="65" height="65" style="margin: -40px;"
+                    class="rounded-circle ">
+                <img src="user_3.webp" alt="profile" width="65" height="65" class="rounded-circle ">
+
+            </div>
+            <div class="count fs-6">50k+</div>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- Slider -->
+
+        <div id="slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active  my-4 justify-content-center">
+                        <div>
+                            <div class=" text-center">
+                                <img src="user_1.webp" class="mx-auto d-block rounded-circle slider-img" width="110" height="110" alt="...">
+                            </div>
+                            <div class="w-100 my-5 d-flex justify-content-center">
+                            <p class="w-50 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ratione laborum sint
+                                obcaecati. Molestias, asperiores. Blanditiis, optio, voluptatum neque debitis quisquam
+                                hic quo, maxime nihil dolore natus doloremque corrupti delectus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  my-4 justify-content-center">
+                        <div>
+                            <div class=" text-center">
+                                <img src="user_3.webp" class="mx-auto d-block rounded-circle slider-img" width="110" height="110" alt="...">
+                            </div>
+                            <div class="w-100 my-5 d-flex justify-content-center">
+                                <p class="w-50 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ratione laborum sint
+                                    obcaecati. Molestias, asperiores. Blanditiis, optio, voluptatum neque debitis quisquam
+                                    hic quo, maxime nihil dolore natus doloremque corrupti delectus.</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item  my-4 justify-content-center">
+                        <div>
+                            <div class=" text-center">
+                                <img src="user_2.webp" class="mx-auto d-block rounded-circle slider-img" width="110" height="110" alt="...">
+                            </div>
+                            <div class="w-100 my-5 d-flex justify-content-center">
+                                <p class="w-50 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ratione laborum sint
+                                    obcaecati. Molestias, asperiores. Blanditiis, optio, voluptatum neque debitis quisquam
+                                    hic quo, maxime nihil dolore natus doloremque corrupti delectus.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="my-auto  carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon m-3" aria-hidden="true"></span>
+                    <span class="visually-hidden m-3">Previous</span>
+                </button>
+                <button class="carousel-control-next my-auto" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
